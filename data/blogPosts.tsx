@@ -9,7 +9,7 @@ export const BLOG_POSTS: BlogPost[] = [
     target: 'CFO & Visionary Leaders',
     category: 'Vision',
     readTime: '4 min read',
-    date: '10 Ott 2023',
+    date: '10 Ott 2025',
     content: (
       <div className="space-y-6 text-gray-300">
         <p className="text-xl font-light text-white leading-relaxed">
@@ -38,7 +38,7 @@ export const BLOG_POSTS: BlogPost[] = [
     target: 'Procurement Managers & IT',
     category: 'Tech',
     readTime: '6 min read',
-    date: '12 Ott 2023',
+    date: '12 Ott 2025',
     content: (
       <div className="space-y-6 text-gray-300">
         <p className="text-xl font-light text-white leading-relaxed">
@@ -67,7 +67,7 @@ export const BLOG_POSTS: BlogPost[] = [
     target: 'Employees & End Users',
     category: 'Case Study',
     readTime: '3 min read',
-    date: '15 Ott 2023',
+    date: '15 Nov 2025',
     content: (
       <div className="space-y-6 text-gray-300">
         <p className="text-xl font-light text-white leading-relaxed">
