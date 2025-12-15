@@ -9,8 +9,7 @@ import { BlogSection } from '../components/BlogSection';
 export const Home: React.FC = () => {
   return (
     <div className="bg-raise-black text-white selection:bg-raise-neon selection:text-black">
-
-      <Hero />
+      <Hero title="RAISE | AI RDA Copilot" subtitle="Trasforma la creazione di Richieste d'Acquisto da onere burocratico a vantaggio competitivo." />
       <ProblemSolution />
       <HowItWorks />
       <BentoFeatures />
