@@ -8,7 +8,7 @@ export const BLOG_POSTS: BlogPost[] = [
     subtitle: 'Come l\'IA Conversazionale sta rendendo obsoleta la burocrazia aziendale.',
     target: 'CFO & Visionary Leaders',
     category: 'Vision',
-    readTime: '4 min read',
+    readTime: '1 min read',
     date: '10 Ott 2025',
     content: (
       <div className="space-y-6 text-gray-300">
@@ -37,7 +37,7 @@ export const BLOG_POSTS: BlogPost[] = [
     subtitle: 'Analisi tecnica di come NLP e OCR riducono le rilavorazioni dell\'85%.',
     target: 'Procurement Managers & IT',
     category: 'Tech',
-    readTime: '6 min read',
+    readTime: '1 min read',
     date: '12 Ott 2025',
     content: (
       <div className="space-y-6 text-gray-300">
@@ -66,7 +66,7 @@ export const BLOG_POSTS: BlogPost[] = [
     subtitle: 'La storia di come abbiamo trasformato l\'incubo di Marco in un click.',
     target: 'Employees & End Users',
     category: 'Case Study',
-    readTime: '3 min read',
+    readTime: '1 min read',
     date: '15 Nov 2025',
     content: (
       <div className="space-y-6 text-gray-300">
