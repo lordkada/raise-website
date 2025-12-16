@@ -2,9 +2,11 @@ import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Clock, Calendar } from 'lucide-react';
 import { BLOG_POSTS } from '../data/blogPosts';
-
+import { SEO } from '../components/SEO';
+import { useModal } from '../context/ModalContext';
 
 export const BlogPostPage: React.FC = () => {
+  const { openModal } = useModal();
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const post = BLOG_POSTS.find((p) => p.id === id);
@@ -78,7 +80,7 @@ export const BlogPostPage: React.FC = () => {
         <div className="bg-raise-gray rounded-2xl p-8 border border-white/10 text-center">
           <h3 className="text-2xl font-bold text-white mb-4">Pronto a trasformare il tuo procurement?</h3>
           <p className="text-gray-400 mb-6">Prenota una demo oggi stesso e scopri la potenza di RAISE.</p>
-          <button className="bg-raise-neon text-raise-black px-8 py-3 rounded-full font-bold hover:bg-raise-yellow transition-colors">
+          <button onClick={openModal} className="bg-raise-neon text-raise-black px-8 py-3 rounded-full font-bold hover:bg-raise-yellow transition-colors">
             Inizia Ora
           </button>
         </div>

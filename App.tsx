@@ -5,21 +5,26 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { BlogPostPage } from './pages/BlogPost';
+import { ModalProvider } from './context/ModalContext';
+import { BookDemoModal } from './components/BookDemoModal';
 
 function App() {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/blog/:id" element={<BlogPostPage />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <ModalProvider>
+      <Router>
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/blog/:id" element={<BlogPostPage />} />
+            </Routes>
+          </main>
+          <Footer />
+          <BookDemoModal />
+        </div>
+      </Router>
+    </ModalProvider>
   );
 }
 
